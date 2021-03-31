@@ -3,7 +3,7 @@ const router = express.Router();
 const {check,validationResult} = require('express-validator');
 const jwt = require('jsonwebtoken');
 const MusicUser = require('../../models/MusicUser');
-const config = require('config');
+//const config = require('config');
 const auth = require('../../middleware/auth');
 
 // Login and get token
@@ -31,7 +31,7 @@ async (req,res) =>{
         };
         jwt.sign(
             payload,
-            config.get('jwtSecret'),
+            "jwtsecrettoken",
             {expiresIn:'360000'},
             (err,token) =>{
                 if (err) throw err;

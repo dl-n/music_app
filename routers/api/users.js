@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const jwt = require('jsonwebtoken');
-const config = require('config');
+//const config = require('config');
 const { check, validationResult } = require('express-validator');
 
 const MusicUser = require('../../models/MusicUser');
@@ -45,7 +45,7 @@ check('email', 'Please include a valid email').isEmail(),
 
       jwt.sign(
         payload,
-        config.get('jwtSecret'),
+        "jwtsecrettoken",
         { expiresIn: '360000' },//5 days
         (err, token) => {
           if (err) throw err;
