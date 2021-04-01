@@ -21,7 +21,7 @@ const index = () => {
                     </p>
         */}
                     <p>
-                    <Link to="#">
+                    <Link to="#" style={{"fontSize":"13px"}}>
                         <i className="fa fa-envelope mr-2 footer-icon"></i>
                         lakshminarayana8940@gmail.com
                     </Link>
