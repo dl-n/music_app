@@ -23,7 +23,7 @@ const index = () => {
                     <p>
                     <Link to="#">
                         <i className="fa fa-envelope mr-2 footer-icon"></i>
-                        hello@company.com
+                        lakshminarayana8940@gmail.com
                     </Link>
                     </p>
                 </div>
@@ -55,7 +55,7 @@ const index = () => {
                     <li><Link to="#" className="fa fa-instagram"></Link></li>
                     <li><Link to="#" className="fa fa-twitter"></Link></li>
                     <li><Link to="#" className="fa fa-facebook"></Link></li>
-                    <li><Link to="#" className="fa fa-linkedin"></Link></li>
+                    <li><Link to="https://www.linkedin.com/in/lakshmi-narayana-4662ab169/" className="fa fa-linkedin"></Link></li>
                     </ul>
                 </div>
 
